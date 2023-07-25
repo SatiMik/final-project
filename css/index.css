@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap%27');
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--main-purple, #4520AB);
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+}
+
+
+#vvod {
+    padding-left: 10px;
+    color: var(--bg-black, #111);
+    font-family: IBM Plex Mono;
+    width: 350px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    position: relative;
+
+}
+
+.transl {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    border-radius: 14px;
+    height: 56px;
+    width: 500px;
+    border: 2px solid black;
+}
+
+#dobav {
+    color: var(--textmain-inverse, #FFF);
+    font-family: IBM Plex Mono;
+    display: inline-flex;
+    height: 38.08px;
+    font-size: 14px;
+    padding: 0px 12px 5px 12px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #000000;
+    margin: auto;
+    transition: all .09s ease-in-out;
+}
+
+#dobav:hover {
+    
+    border: 2px solid #4520AB;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.wrapper  {
+    display: flex;
+    border-top: 1px solid black;
+}
+
+.wrapper:first-child {
+    border-top: 0;
+}
+
+
+
+
+/* table */
+
+.index {
+    padding-left: 15px;
+    font-style: 2px solid black;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.ru {
+    width: 250px;
+    height: 40px;
+    text-align: left;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    /* border-radius: 8px 0px 0px 8px; */
+    background: #F0F0F0;
+    border-right: 2px solid black;
+}
+
+span {
+    padding: 10px;
+}
+
+.en {
+
+    width: 250px;
+    height: 40px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border-radius: 0px 8px 8px 0px; */
+    align-items: center;
+    background-color: #d3d3d3;
+}
+
+
+.overflow:hover::after {
+    content: attr(data-title);
+    width: max-content;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 8px 32px;
+    white-space: normal;
+    color: rgb(0, 0, 0);
+    margin-left: -90px;
+    margin-bottom: 200px;
+    max-width: 150px;
+    overflow-wrap: break-word;
+}
+
+.del {
+    
+    margin-right: 15px;
+    margin-bottom: 17px;
+    width: 18px;
+    height: 18px;
+}
+
+.en {
+    overflow: '...';
+}
+.footer {
+    margin-top: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #ADADAD;
+    transition: all .09s ease-in-out;
+
+}
+
+.footer:hover {
+    
+    border-bottom: 2px solid #4520AB;
+}
+.clear {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.allClear {
+    width: 24px;
+    height: 24px;
+ 
+}
+
+button {
+    background: none;
+    border: none;
+    font-family: IBM Plex Mono;
+    font-size: 18px;
+    padding: 8px 12px 10px 12px;
+}
+
+@media (max-width: 767px) {
+
+    .main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    #vvod {
+        padding-left: 10px;
+        color: var(--bg-black, #111);
+        font-family: IBM Plex Mono;
+        width: 328px;
+        height: 56px;
+        font-size: 17px;
+        border-radius: 14px;
+        border: 2px solid var(--bg-black, #111);
+        margin-top: 50px;
+        position: relative;
+
+    }
+
+    .transl {
+        display: flex;
+        justify-content: center;
+    }
+
+    #dobav {
+        color: var(--textmain-inverse, #FFF);
+        font-family: IBM Plex Mono;
+        display: inline-flex;
+        height: 38px;
+        font-size: 14px;
+        padding: 0px 10px 5px 10px;
+        align-items: center;
+        border-radius: 8px;
+        background-color: #111;
+        position: absolute;
+        margin-left: 235px;
+        margin-top: 62px;
+    }
+
+    .ru,
+    .en {
+        font-family: IBM Plex Mono;
+        width: 172px;
+    }
+
+
+    .en img {
+        margin-left: 30px;
+        width: 18px;
+        height: 18px;
+    }
+
+}
